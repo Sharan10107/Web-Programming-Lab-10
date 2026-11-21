@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #10172a, #202b48);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.subtitle {
+    color: #aab6d3;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: rgba(255,255,255,0.11);
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #65d6ff;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #c5cee3;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 9px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #aab6d3;
+}
+
+input:focus {
+    outline: none;
+    border-color: #65d6ff;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #6366f1, #06b6d4);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 20px rgba(6,182,212,0.3);
+}
+
+.link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #65d6ff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.start-time {
+    text-align: right;
+    color: #65d6ff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 25px;
+    color: #8e9ab7;
+    font-size: 13px;
+}
+
+@media(max-width: 600px) {
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+}
